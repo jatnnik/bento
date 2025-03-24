@@ -1,4 +1,4 @@
-<p style="text-align: center;">
+<p align="center">
     <img src="https://emojicdn.elk.sh/🍱" width="48" height="48">
 </p>
 
