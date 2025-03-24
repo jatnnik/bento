@@ -1,25 +1,27 @@
-# Laravel + React Starter Kit
+<p style="text-align: center;">
+    <img src="https://emojicdn.elk.sh/🍱" width="48" height="48">
+</p>
 
-## Introduction
+# bento
 
-Our React starter kit provides a robust, modern starting point for building Laravel applications with a React frontend using [Inertia](https://inertiajs.com).
+Bento is an opinionated Laravel Starter Kit, based on the official [React Starter Kit](https://github.com/laravel/react-starter-kit).
 
-Inertia allows you to build modern, single-page React applications using classic server-side routing and controllers. This lets you enjoy the frontend power of React combined with the incredible backend productivity of Laravel and lightning-fast Vite compilation.
+It comes with the following customizations:
 
-This React starter kit utilizes React 19, TypeScript, Tailwind, and the [shadcn/ui](https://ui.shadcn.com) and [radix-ui](https://www.radix-ui.com) component libraries.
+- Sensible defaults in `AppServiceProvider.php`
+- Custom Pint config
+- PHPStan
+- Custom Composer scripts:
+  - `lint` – Runs Pint
+  - `test:lint` – Runs Pint in test mode
+  - `test:types` – Runs PHPStan
+  - `test:pest` – Runs tests with Pest
+  - `test` – Runs all previous `test:*` commands
 
-## Official Documentation
+## Usage
 
-Documentation for all Laravel starter kits can be found on the [Laravel website](https://laravel.com/docs/starter-kits).
+Run this command to initialize a new Laravel project using this starter kit:
 
-## Contributing
-
-Thank you for considering contributing to our starter kit! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## License
-
-The Laravel + React starter kit is open-sourced software licensed under the MIT license.
+```bash
+laravel new my-app --using=jatnnik/bento
+```
