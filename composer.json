@@ -70,7 +70,8 @@
       "@test:lint",
       "@test:types",
       "@test:pest"
-    ]
+    ],
+    "ziggy:generate-types": "php artisan ziggy:generate --types-only resources/js/types/"
   },
   "extra": {
     "laravel": {
